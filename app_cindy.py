@@ -107,7 +107,7 @@ def main():
     ax.set(title='Revenu', xlabel='Revenu', ylabel='Nombre')
     st.pyplot(fig)   
     st.subheader('Comparaison de l\'indicateur')
-    indicator_choice = st.selectbox('Sélectionnez un indicateur', ['AMT_INCOME_TOTAL', 'DAYS_BIRTH', 'CNT_CHILDREN'])
+    indicator_choice = st.selectbox('Sélectionnez un indicateur', ['AMT_INCOME_TOTAL', 'CNT_CHILDREN'])
     plot_indicator_comparison(data, client_choice, indicator_choice)
     
     # Analyse bi-dimmentionnel (Graphique revenu en fonction du nombre d'enfants)
